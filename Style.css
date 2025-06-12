@@ -1,0 +1,577 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#container{
+   border: 1px solid red;
+}
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header / Navbar */
+
+#navbar{
+  background-image: url("Images/Summer-Banner-860x1150.webp");
+  height: 450px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+   
+}
+#navbar_logo{
+   text-align: center; 
+}
+.nav_pad{
+  margin-top: 10px;
+}
+#navbar_logo img {
+ 
+  width: 130px; /* adjust as needed */
+  height: auto;
+  padding-top: 15px;
+}
+#nav_link{
+  display: none;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.card {
+  border: 1px solid #eee;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fafafa;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.card p {
+  margin: 0.3rem 0;
+}
+
+.card button,.grid_child div button{
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.card button:hover {
+  background-color: #dd7631;
+}
+
+.view-all-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-all-btn{
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  width: 230px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 35px;
+}
+
+.view-all-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* template section */
+#templete img{
+   width: 100%;
+}
+#templete1 {
+   display: none;
+}
+/* .luxury-section  */
+.luxury-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.luxury-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 10px;
+}
+.luxury-item {
+  width: 48%;
+}
+.luxury-item img {
+  width: 100%;
+  height: auto;
+}
+
+.luxury-item h5 {
+  margin-top: 10px;
+}
+/* grid section  */
+.grid_child{
+  width: 100%;
+  text-align: center;
+}
+.grid_child img{
+  width: 100%;
+}
+
+/* deals section  */
+#deals h3{
+  text-align: center;
+  padding: 20px;
+}
+#deals {
+  text-align: center;
+}
+.deals_child{
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.deals_child:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+}
+.deals_child img{
+  width: 100%;
+}
+
+/* notes section  */
+#note_id h3{
+   text-align: center;
+   padding: 20px;
+}
+#notes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.notes_child{
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+.notes_child:hover {
+  transform: scale(1.05);
+}
+.notes_child img{
+  width: 100%;
+}
+
+/* why section  */
+#why_head h3{
+  text-align: center;
+  padding: 20px;
+}
+#why{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.why_child{
+  width: 48%;
+}
+.why_child p{
+  font-size: small;
+}
+.why_child img{
+  width: 100%;
+}
+/* banner section  */
+#banner img{
+  width: 100%;
+}
+#banner{
+  margin: 20px 0px;
+}
+#banner1{
+  display: none;
+}
+
+/* review section  */
+.review-section {
+
+  text-align: center;
+  background-color: #fdfdfd;
+}
+
+.review-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.review-section img {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+}
+/* poster section  */
+#poster{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 0px;
+}
+.poster_child{
+  width: 48%;
+}
+.poster_child img{
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+footer h3 {
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+footer input[type="email"] {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  border: none;
+}
+
+footer i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+footer p:last-child {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  color: #aaa;
+}
+.footer_ul{
+  display: none;
+}
+/* Tablet View */
+@media only screen and (min-width:768px) {
+  
+  #navbar {
+    background-image: url(Images/Summer-Banner-1920x720.webp);
+    height: 350px; /* Slightly smaller banner */
+    background-size: cover; /* Cover for better fit */
+    flex-wrap: nowrap; /* Maybe keep in one line */
+    padding: 0 20px;
+  }
+  
+  #navbar_logo img {
+    width: 150px; /* Bigger logo on tablet */
+  }
+  
+  #nav_link{
+  display: none;
+ }
+
+  .products{
+    margin-top: 20px;
+  }
+
+   .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two products per row */
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+  }
+  #templete {
+   display: none;
+}
+  #templete1 {
+   display: block;
+}
+  #templete1 img{
+   width: 100%;
+}
+  .luxury-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px 60px;
+  }
+
+  .luxury-item {
+    width: 48%; /* roughly half the container width, accounting for spacing */
+    margin-bottom: 15px; /* optional: adds spacing between rows */
+  }
+  
+  #grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .grid_child {
+    width: 48%; /* Two per row */
+    margin-bottom: 15px;
+  }
+  #deals1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+  }
+
+  .deals_child {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+
+  .deals_child img {
+    width: 100%;
+    height: auto;
+  }
+  #notes {
+    justify-content: space-around; /* More space around notes */
+  }
+  
+  .notes_child {
+    width: 45%; /* Two notes per row */
+  }
+  
+  #why {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .why_child {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  .why_child img {
+    width: 100%;
+    height: auto;
+  }
+  #banner{
+  display: none;
+ }
+ #banner1{
+  display: block;
+ }
+ #banner1 img{
+  width: 100%;
+ }
+ 
+  #poster {
+    flex-wrap: nowrap;
+  }
+  
+  .poster_child {
+    width: 45%;
+  }
+  
+  footer {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  
+  footer input[type="email"] {
+    width: 90%;
+  }
+}
+@media only screen and (min-width:1200px) {
+  #navbar {
+    background-image: url(Images/Summer-Banner-1920x720.webp);
+    
+    background-size: cover; /* Cover for better fit */
+    flex-wrap: nowrap; /* Maybe keep in one line */
+    height: 500px;
+    width: 100%;
+  }
+  #nav_pad_bar{
+    display: none;
+  }
+  #nav_link{
+  display: contents;
+  height: 420px;
+  width: 100%;
+}
+   #navbar {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Allow height to adjust */
+    background-size: cover;
+    padding-bottom: 20px;
+  }
+  #nav_pad_icon {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 40px;
+  }
+  /* #nav_pad_icon{
+    display: none;
+  } */
+
+   #navbar_logo {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #navbar_logo img {
+    width: 150px;
+  }
+
+  #nav_link {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .products {
+  margin-top: 20px;
+}
+.product-grid {
+    grid-template-columns: repeat(4, 1fr); /* Two products per row */
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+  }
+
+  #templete {
+   display: none;
+}
+  #templete1 {
+   display: block;
+}
+  #templete1 img{
+   width: 100%;
+}
+.luxury-section {
+    padding: 1rem;
+  }
+  .luxury-item {
+    width: 14%;
+    margin-bottom: 20px;
+  }
+  #grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .grid_child {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  .grid_child {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  #grid_child_img {
+    padding: 70px;
+  }
+  #deals{
+    margin-top: -30px
+  }
+  .deals_child {
+    width: 30%;
+  }
+  .deals_child img {
+    width: 100%;
+  }
+  .notes_child{
+    width: 12%;
+    padding: 10px;
+  }
+  .notes_child img{
+    width: 100%;
+  }
+  #note_id{
+    padding: 10px;
+  }
+  .why_child{
+    width: 23%;
+  }
+  .why_child img{
+    width: 50%;
+  }
+  .review-section{
+    margin-top: 25px;
+  }
+  #review_child img{
+    width: 100%;
+    height: auto;
+  }
+  .footer_ul{
+  display:contents;
+}
+footer{
+  margin-top: 40px;
+}
+}
