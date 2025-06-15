@@ -23,7 +23,7 @@ a {
 /* Header / Navbar */
 
 #navbar{
-  background-image: url("Images/Summer-Banner-860x1150.webp");
+  background-image: url(Images/Summer-Banner-860x1150.webp);
   height: 450px;
   color: #fff;
   display: flex;
