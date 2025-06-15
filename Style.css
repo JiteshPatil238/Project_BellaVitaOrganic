@@ -22,18 +22,18 @@ a {
 
 /* Header / Navbar */
 
-#navbar{
-  background-image: url(Images/Summer-Banner-860x1150.webp);
+#navbar {
+  background-image: url("Images/Summer-Banner-860x1150.webp"); 
   height: 450px;
   color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-   
 }
+
 #navbar_logo{
    text-align: center; 
 }
